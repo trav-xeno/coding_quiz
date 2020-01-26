@@ -44,53 +44,58 @@ $(function() {
   const questions = [
     {
       id: 0,
-      query: "question 1 ",
-      a: "a",
-      b: "b",
-      c: "c",
-      d: "d",
+      query: "Which is NOT a frontend framework? ",
+      a: "VueJS",
+      b: "Spring",
+      c: "Angular",
+      d: "Elm",
       answer: "b"
     },
     {
       id: 1,
-      query: "question 2",
-      a: "a",
-      b: "b",
-      c: "c",
-      d: "d",
+      query: "what does array.find() in javascript do?",
+      a: "returns all that match",
+      b: "returns an object ",
+      c: "returns only the index",
+      d: "return first occurance only",
       answer: "d"
     },
     {
       id: 2,
-      query: "question 3",
-      a: "a",
-      b: "b",
-      c: "c",
-      d: "d",
+      query: "Which are graph traversal algorithm",
+      a: "speedy Search",
+      b: "bubble Search",
+      c: "Depth first search",
+      d: "A star",
       answer: "c"
     },
     {
       id: 3,
-      query: "question 4",
-      a: "a",
-      b: "b",
-      c: "c",
-      d: "d",
+      query: "How do you get whole numbers using Math.Random()?",
+      a: "Multiply by the number you want",
+      b: "Multiply by a floating bumer",
+      c: "do nothing it returns a whole",
+      d: "divied by a number ",
       answer: "a"
     },
     {
       id: 4,
-      query: "question 5",
-      a: "a",
-      b: "b",
-      c: "c",
-      d: "d",
+      query: "Which style file lanaggues is WC3 standard?",
+      a: "css",
+      b: "sass",
+      c: "scss",
+      d: "less",
       answer: "a"
     }
   ];
-
+  /*
+  function fading() {
+    let fade = setTimeout(function () {
+      ans.fadeout(500);
+    }, 2000);
+    clearInterval(fade);
+  }*/
   function endQuiz() {
-    $("#scoreList").hide();
     score = sec;
     localStorage.setItem("score", score);
     window.location = "./endQuiz.html";
@@ -110,12 +115,11 @@ $(function() {
   }
 
   function decrementTime() {
-    if (sec <= 5) {
+    if (sec <= 10) {
       endQuiz();
       sec = 0;
       clearInterval();
     } else {
-      console.log(`time before: ${sec} `);
       sec = sec - 10;
       clearInterval();
       //minusTime
@@ -162,7 +166,6 @@ $(function() {
 
       ans.text("Correct").attr("class", "correct");
 
-      fading();
       console.log("correct");
       nextQuestion();
     } else {
@@ -170,17 +173,9 @@ $(function() {
       console.log("wrong");
       decrementTime();
       ans.text("incorrect").attr("class", "incorrect");
-      fading();
       nextQuestion();
     }
   });
-
-  function fading() {
-    let fade = setTimeout(function() {
-      ans.hide();
-    }, 2000);
-    clearInterval(fade);
-  }
 
   startbtn.on("click", function() {
     setTime();
