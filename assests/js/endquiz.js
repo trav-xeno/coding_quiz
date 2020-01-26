@@ -19,11 +19,14 @@ $(function() {
 
   //  <li><span class="score-badge">1</span> ab : 55</li>
   function createList() {
-    if (list.list > 0) {
-      for (let i = 0; i < scores.length; i++) {
+    if (list.length > 0) {
+      for (let i = 0; i < list.length; i++) {
         let id = i + 1;
         scoreList.append(
-          `<li> <span class="score-badge">${id}</span> ${score[i]}</li>`
+          `
+          <li> <span class="score-badge">${id}</span> ${list[i]}</li>
+          
+          `
         );
       }
     } else {
