@@ -1,0 +1,1 @@
+document.registerElement("tn-question");

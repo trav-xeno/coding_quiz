@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>End of Quiz</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header><h1>Congrats</h1></header>
+    <main class="container">
+      <section id="addname" class="row">
+        <form id="form">
+          <div class="col s12">
+            <p id="results"></p>
+          </div>
+          <div class="col s12">
+            <div class="input-field">
+              <input
+                id="name"
+                type="text"
+                class="validate"
+                value="derp"
+                pattern="[a-zA-Z]{1,4}"
+              />
+              <label for="name">Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <button
+              type="submit"
+              class="col s4 waves-effect waves-light  btn-small start-btn "
+            >
+              submit
+            </button>
+          </div>
+        </form>
+      </section>
+      <section id="scores" class="row">
+        <div class="col s4">
+          <div class="row">
+            <div class="col s12">
+              <button
+                class="waves-effect waves-light btn-small start-btn "
+                value="back"
+              >
+                Go Back
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <button
+                class="waves-effect waves-light  btn-small start-btn "
+                value="clear"
+              >
+                Clear Scores
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="row">
+            <div class="col s12 cetner-align">
+              <h3>High Scores</h3>
+            </div>
+          </div>
+          <div class="row">
+            <ul id="scoreList" class="scores"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assests/js/endquiz.js"></script>
+  </body>
+</html>

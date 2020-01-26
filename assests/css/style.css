@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  position: relative;
+  height: 300px;
+  background-image: linear-gradient(#01579b, #006064);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+h1 {
+  margin: 0;
+  padding: 100px 0;
+  font: 44px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+}
+.start-btn {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+  background-color: #1f1f70;
+}
+.start-btn:hover {
+  color: #1f1f70;
+  border: 2px solid #1f1f70;
+  background-color: #ffffff;
+}
+.start-btn:focus {
+  color: #1f1f70;
+  border: 2px solid #1f1f70;
+  background-color: #ffffff;
+}
+ul.sidenav li a {
+  color: #000000;
+}
+ul.sidenav li a:hover {
+  background-color: rgba(31, 31, 112, 0.4);
+  border-bottom: 2px solid #1f1f70;
+}
+
+ul.sidenav a.close {
+  background-color: #1f1f70;
+  color: #ffffff;
+}
+ul.sidenav a.cloe:hover {
+  background-color: #ffffff;
+  border: 2px solid #1f1f70;
+  color: #1f1f70;
+}
+.none {
+  list-style-type: none;
+}
+div.collection button.collection-item {
+  color: #1f1f70;
+}
+div.collection button.collection-item:hover {
+  background-color: #1f1f70 !important; /* i know its bad practice  but nothing I did worked until important was used*/
+  color: #ffffff;
+}
+.correct {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+.incorrect {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+/* Circle to show how many questions and correct ones and wrong ones*/
+.circle {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.start {
+  height: 400px;
+}
+.ans {
+  border: none;
+  background-color: #ffffff;
+  padding: 14px 28px;
+  color: #1f1f70;
+  font-size: 24px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* On mouse-over */
+.ans:hover {
+  background-color: #1f1f70;
+  color: #ffffff;
+}
+.ans:focus {
+  background-color: #ffffff;
+  color: #1f1f70;
+}
+/* HeroesComponent's private CSS styles */
+.scores {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+.scores li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #eee;
+  margin: 0.5em;
+  padding-top: 3px;
+  line-height: 1em;
+  padding-bottom: 3px;
+  height: 32px;
+  border-radius: 4px;
+}
+.scores li:hover {
+  color: #607d8b;
+  background-color: #ddd;
+  left: 0.1em;
+}
+.scores li.selected {
+  background-color: #cfd8dc;
+  color: #ffffff;
+}
+.scores li.selected:hover {
+  background-color: #bbd8dc;
+  color: #ffffff;
+}
+.scores .score-badge {
+  display: inline-block;
+  font-size: small;
+  color: #ffffff;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #1f1f70;
+  position: relative;
+  left: -3px;
+  top: -4px;
+  height: 32px;
+  border-radius: 4px 0 0 4px;
+}

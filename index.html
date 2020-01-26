@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <h1>
+          <span id="clock">Coding Quiz!</span>
+          <span id="minus" class=" red darken-3 white-text "></span>
+        </h1>
+      </div>
+
+      <div class="col s12"></div>
+      <ul class="sidenav" id="mobile-nav">
+        <a class="sidenav-close right close btn" href="#!">
+          <i class="material-icons">close</i>
+        </a>
+        <!--Add scores to list-->
+      </ul>
+    </header>
+
+    <main id="app">
+      <div class="row">
+        <div class="col s12"></div>
+      </div>
+      <div class="row">
+        <div class=" col s12">
+          <a
+            id="scores"
+            href="#"
+            data-target="mobile-nav"
+            class="sidenav-trigger waves-effect waves-light btn left start-btn"
+          >
+            Scores
+          </a>
+        </div>
+      </div>
+      <section id="landing" class="container ">
+        <div class="card z-depth-5 start">
+          <div class="row">
+            <h3 class="col s12 center-align">Ready to start?</h3>
+          </div>
+          <div class="row">
+            <div class="col s4"></div>
+            <div class="col s4 center-align">
+              <button
+                id="start"
+                class="waves-effect waves-light  btn-large start-btn "
+              >
+                START
+              </button>
+            </div>
+            <div class="col 4"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz" class="container">
+        <div class="card z-depth-5">
+          <div class="row">
+            <h5 id="ans" class="col s12 center-align"></h5>
+          </div>
+          <div class="row">
+            <div class="col s12 center-align"><h3 id="query"></h3></div>
+            <div class="col s12">
+              <div class="collection question-link ">
+                <ul class="none"> 
+                  <li><button id="a" class=" waves-effect waves-light  ans " value="a"></button></li>
+                  <li><button id="b" class=" waves-effect waves-light  ans " value="b"></button></li>
+                  <li><button id="c" class=" waves-effect waves-light  ans " value="c"></button></li>
+                  <li><button id="d" class=" waves-effect waves-light  ans " value="d"></button></ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <script src="./assests/js/main.js"></script>
+  </body>
+</html>
